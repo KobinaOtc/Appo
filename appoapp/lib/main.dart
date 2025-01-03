@@ -1,5 +1,7 @@
 // import 'package:appoapp/phone_sign_up.dart';
+import 'package:appoapp/Screens/profile.dart';
 import 'package:appoapp/constants.dart';
+import 'package:appoapp/mongodb.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase_auth_ui/supabase_auth_ui.dart';
 
@@ -13,6 +15,7 @@ import './sign_in.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // await MongoDatabase.connect();
 
   /// TODO: replace with your credentials
   await Supabase.initialize(
@@ -48,6 +51,7 @@ class MyApp extends StatelessWidget {
         // '/phone_sign_up': (context) => const PhoneSignUp(),
         // '/verify_phone': (context) => const VerifyPhone(),
         '/home': (context) => const MainScreen(),
+        '/profile': (context) => const Profile(),
       },
       onUnknownRoute: (RouteSettings settings) {
         return MaterialPageRoute<void>(

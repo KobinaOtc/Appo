@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+// Data Base constants
+const MONGO_URL = '';
+const COLLECTION_NAMES = [''];
+
 const cardBackgroundColor = Color(0xFF21222D);
 const primaryColor = Color(0xFF2697FF);
 const secondaryColor = Color(0xFFFFFFFF);
