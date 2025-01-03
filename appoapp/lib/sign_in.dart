@@ -10,6 +10,9 @@ class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     void navigateHome(AuthResponse response) {
+      if (kDebugMode) {
+        print(AuthResponse);
+      }
       Navigator.of(context).pushReplacementNamed('/home');
     }
 
@@ -100,7 +103,7 @@ class SignUp extends StatelessWidget {
           // optionText,
           // spacer,
 
-          // Dark theme appoapp
+          // Dark theme example
           // Card(
           //     elevation: 10,
           //     color: const Color.fromARGB(255, 24, 24, 24),

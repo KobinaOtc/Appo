@@ -14,26 +14,26 @@ class DashboardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 18),
+        padding: const EdgeInsets.symmetric(horizontal: 18),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 18,
             ),
-            HeaderWidget(),
-            SizedBox(
+            const HeaderWidget(),
+            const SizedBox(
               height: 18,
             ),
-            ActivityDetailsCard(),
-            SizedBox(
+            const ActivityDetailsCard(),
+            const SizedBox(
               height: 18,
             ),
-            LineChartCard(),
-            SizedBox(
+            const LineChartCard(),
+            const SizedBox(
               height: 18,
             ),
-            BarGraphCard(),
-            SizedBox(
+            const BarGraphCard(),
+            const SizedBox(
               height: 18,
             ),
             if (Responsive.isTablet(context)) const SummaryWidget()

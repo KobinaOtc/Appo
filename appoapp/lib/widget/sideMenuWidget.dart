@@ -40,6 +40,7 @@ class _SideMenuWidgetState extends State<SideMenuWidget> {
       child: InkWell(
         onTap: () => setState(() {
           selectedIndex = index;
+          Navigator.of(context).pushReplacementNamed(data.menu[index].url);
         }),
         child: Row(
           children: [
